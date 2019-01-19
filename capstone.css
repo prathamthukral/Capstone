@@ -1,0 +1,324 @@
+/*Desktop*/
+.tbl {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.trw {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+}
+
+body {
+    min-height: 100%;
+}
+
+header.jumbotron {
+    height: 12%;
+    text-align: center;
+    background-color: #add8e6;
+    text-transform: uppercase;
+    padding: 3% 0 2%;
+}
+
+#nav-div {
+    top: 0;
+    position: static;
+    height: 30px;
+    width: 100%;
+    background-color: #333;
+}
+
+a.nav-links {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    font-size: 150%;
+    text-decoration: none;
+    color: #add8e6;
+}
+
+a.nav-links:hover {
+    text-decoration: none;
+    color: #46b9df;
+}
+
+p {
+    font-size: 18px;
+}
+
+#home .tbl .content {
+    height: 800px;
+    margin: 15px;
+    padding: 5px;
+    overflow-y: auto;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.content-date {
+    font-size: 13px;
+    color: #626262;
+}
+
+#home img {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+#footer-div {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    font-size: 30px;
+    text-align: right;
+}
+
+.footer a {
+    margin-right: 20px;
+    display: inline;
+    color: #add8e6;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer i:hover {
+    text-decoration: none;
+    color: #46b9df;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+	width:4px;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #333;
+	border-radius: 2px;
+}
+
+::-webkit-scrollbar-track{
+	background:transparent;
+}
+
+::-webkit-scrollbar-button{
+    width:0px;
+}
+#contact .cell{
+    padding:5px;
+    margin:10px;
+}
+.w30{
+    width:30%;
+}
+.w70{
+    width:65%;
+}
+#map{
+    width:100%;
+    height:415px;
+    padding: 0px;
+    border:0;
+}
+#business-hours{
+    position: absolute;
+    top:190px;
+    margin-left:20px; 
+    height:415px;
+}
+#business-hours td{
+    border:1px solid;
+    padding:5px;
+}
+#business-hours tr:nth-child(n+3):hover{
+    background-color: lightblue;
+}
+#phone-contact{
+    font-size: 18px;
+}
+#contact .cell:nth-child(3){
+    height:400px;
+}
+#contact .cell p{
+    background-color: lightblue;
+    text-align: right;
+    color:#333;
+}
+#contact .cell img{
+    width:95%;
+    height:auto;
+}
+#cars .tbl{
+    height:190px;
+    width:100%;
+}
+#cars .trw{
+    height:33%;
+    width:100%;
+    background-color: lightblue;
+    border:1px solid; 
+}
+#cars .cell{
+    width:50%;
+    padding:10px;
+    border:1px solid white;
+    border-bottom-width: 10px;
+}
+#cars .cell p, #cars .cell h3{
+    font-size: 150%;
+    line-height: 80%;
+    text-align: right;
+}
+#cars .cell img{
+    width: 100%;
+    height: auto;
+}
+
+.dropdown{
+    display: none;
+}
+
+#contact #alt-map-link{
+    display: none;
+}
+#myCarousel{
+    display: none;
+}
+
+/*Media Queries*/
+
+/*Tablet*/
+@media screen and (max-width:700px){
+    #myCarousel img{
+        height:250px;
+        width: auto;
+        margin: auto;
+        margin-top: 10px;
+    }
+    #home .cell{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    h1{
+        text-align: right;
+    }
+    #pageTitle{
+        display: inline-block;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    #home .cell p{
+        font-size:15px;
+    }
+    #home .cell .content-date{
+        font-size: 13px;
+    }
+    #myCarousel{
+        display: block;
+    }
+    #home .cell .content #desktop{
+        display: none;
+    }
+    #home .cell .content #mobile{
+        display: block;
+    }
+    #home .tbl .content{
+        height:400px;
+    }
+    #home #toronto-pic{
+        margin: auto;
+        display: block;
+        height:150px;
+        width:auto;
+    }
+    .dropdown{
+        display: inline;
+        float: left;
+        margin-left:25px;
+    }
+    #contact iframe{
+        display:none;
+    }
+    .w30{
+        width:95%;
+    }
+    .w70{
+        width: 95%;
+    }
+    #contact #alt-map-link{
+        display: block;
+        font-size: 150%;
+        text-decoration: none;
+    }
+    #contact .tbl, #contact .trw, #contact .cell{
+        display: block;
+    }
+    #business-hours{
+        display: table;
+        position: relative;
+        top:initial; 
+        height: initial;
+        width:100%;
+        margin-left: initial;
+    }
+    #business-hours tr:nth-child(even){
+        background-color:#d0d0d0;
+    }
+    #cars .tbl .trw{
+        display: block;
+    }
+    #cars .tbl .trw .cell{
+        display: inline;
+        border:none;
+    }
+    #cars img{
+        display: block;
+        padding:10px;
+        padding-bottom: 0;
+    }
+    #cars .cell p, #cars .cell h3{
+        text-align: center;
+        line-height: 20px;
+    }
+    #cars div{
+        margin-bottom: 10px;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 480px){
+    #myCarousel img{
+        height:150px;
+        width: auto;
+        margin: auto;
+        margin-top: 7px;
+    }   
+    #home .tbl .content{
+        height:300px;
+    }
+    #home #toronto-pic{
+        display: none;
+    }
+    #pageTitle h1{
+        font-size: 20px;
+        margin-right: -100px;
+    }
+    #cars{
+        font-size: 70%;
+    }
+}
